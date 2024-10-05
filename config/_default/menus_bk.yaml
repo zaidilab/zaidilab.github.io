@@ -5,15 +5,18 @@ main:
   - name: Home
     url: /
     weight: 10
+  - name: Documentation
+    url: docs/
+    weight: 20
   - name: Blog
     url: blog/
-    weight: 20
-  - name: Gillespie
-    url: gillespie/
     weight: 30
-  - name: Contributors
-    url: contributors/
+  - name: Showcase
+    url: showcase/
     weight: 40
+  - name: Community
+    url: community/
+    weight: 50
 
 sidebar:
   - identifier: more

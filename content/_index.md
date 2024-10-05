@@ -8,90 +8,33 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: hero
+  - block: markdown
+    id: Welcome
     content:
-      title: Write Docs Fast, Focus on Your Content
-      text: The easy, no-code technical documentation solution your users will love 🎉
-      primary_action:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
-        icon: rocket-launch
-      secondary_action:
-        text: Read the docs
-        url: /docs/
-      announcement:
-        text: "Announcing the release of version 2."
-        link:
-          text: "Read more"
-          url: "/blog/"
+      title: Weclome to our blog!
+      subtitle: A subtitle
+      text: Statistical genetics (broad term for quantitative and population genetics) was tough for me as a first-year grad student. I would easily get stuck on papers, which would be swimming in equations and abstractions, many of which were beyond my comprehension, thanks to my limited knowledge of probability theory and statistics at the time. If you're a student who feels this way, I feel your pain. The way I learned was by first developing intuition for the concepts, and then building the mathematical background needed to study them rigorously. The intuition, which also involves strong quantitative thinking, is usually sufficient for most researchers doing applied research. The primary focus of this blog is to help develop this intuition. That said, I believe (and take it from someone who didn't have a math degree in his undergraduate) that there comes a point in genetics where working out the math actually precedes the intuition. This happens for problems, which are too complex to intuit. The math (ironically) helps to simplify them. Therefore, if you're interested in working on such problems, you'll have to get rid of the math anxiety. Honestly though, one thing I have learned is that most concepts in population and statistical genetics boil down to simple probability theory. I rarely encounter a problem which cannot be written down as a probability statement. Thus, if you know the core fundamentals of probability (e.g. conditional probability), you can go quite far. So, the second thing I hope to do with this blog is to post derivations for population genetics/statistical genetics concepts built up from first principles of probability theory. So welcome to the site and I hope you find it useful.\nArslan
+  - block: people
+    content:
+      title: Meet the Team
+      # Choose which groups/teams of users to display.
+      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
+      user_groups:
+        - Principal Investigators
+        - Researchers
+        - Grad Students
+        - Administration
+        - Visitors
+        - Alumni
+      sort_by: Params.last_name
+      sort_ascending: true
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: ""
-      background:
-        color: ""
-        image:
-          # Add your image background to `assets/media/`.
-          filename: ""
-          filters:
-            brightness: 0.5
-  - block: stats
-    content:
-      items:
-        - statistic: "1M+"
-          description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
-          description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
-          description: |
-            Discord community  
-            for support
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-800"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
-  - block: features
-    id: features
-    content:
-      title: Features
-      text: Collaborate, publish, and maintain technical knowledge with an all-in-one documentation site. Used by 100,000+ startups, enterprises, and researchers.
-      items:
-        - name: Optimized SEO
-          icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
-          icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
-          icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
-          icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
-          icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
-          icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
-  - block: cta-card
-    content:
-      title: "Start Writing with the #1 Effortless Documentation Platform"
-      text: Hugo Blox Docs Theme brings all your technical knowledge together in a single, centralized knowledge base. Easily search and edit it with the tools you use every day!
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/details/docs/
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
+      # Show user's social networking links? (true/false)
+      show_social: false
+      # Show user's interests? (true/false)
+      show_interests: true
+      # Show user's role?
+      show_role: true
+      # Show user's organizations/affiliations?
+      show_organizations: true
 ---
